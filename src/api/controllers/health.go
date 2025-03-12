@@ -3,7 +3,7 @@ package handlers
 import (
 	"encoding/json"
 	"net/http"
-	"todo-v1/src/services"
+	"todo-v1/src/api/services"
 )
 
 func HealthCheck(writer http.ResponseWriter, request *http.Request) {

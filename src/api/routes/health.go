@@ -1,7 +1,7 @@
 package routes
 
 import (
-	handlers "todo-v1/src/controllers"
+	handlers "todo-v1/src/api/controllers"
 
 	"github.com/gorilla/mux"
 )

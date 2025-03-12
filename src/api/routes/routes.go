@@ -8,6 +8,7 @@ func SetupRoutes() *mux.Router {
 	router := mux.NewRouter()
 
 	RegisterHealthCheckRoutes(router)
+	RegisterTodoRoutes(router)
 
 	return router
 }

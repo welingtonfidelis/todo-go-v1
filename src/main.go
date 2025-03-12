@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"todo-v1/src/routes"
+	"todo-v1/src/api/routes"
 
 	"github.com/joho/godotenv"
 )
