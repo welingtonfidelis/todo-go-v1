@@ -1,26 +1,14 @@
 package services
 
 import (
-	"time"
 	"todo-v1/src/api/models"
+	"todo-v1/src/api/repositories"
 )
 
-// TODO use database and repositories instead of memory array
-var description = "description A"
-var todoList = []models.Todo{
-	{
-		Name:        "test A",
-		Status:      "todo",
-		Date:        time.Date(2025, time.March, 12, 20, 6, 17, 0, time.UTC),
-		Description: &description,
-	},
-	{
-		Name:   "test B",
-		Status: "todo",
-		Date:   time.Date(2025, time.March, 12, 20, 6, 17, 0, time.UTC),
-	},
+func ListTodos() []models.Todo {
+	return repositories.ListTodos()
 }
 
-func ListTodos() []models.Todo {
-	return todoList
+func CreateTodo(newTodo models.CreateTodoInput) models.Todo {
+	return repositories.CreateTodo(newTodo)
 }
